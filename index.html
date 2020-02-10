@@ -31,7 +31,11 @@
         <h5 class="header col s12 light">Front-End Developer Quiz</h5>
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+       <a href="#" id="download-button" class="btn-large waves-effect waves-light orange " data-target="modal-testing">Get Started</a>
+        <!-- <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>-->
+      </div>
+      <div class="modal" id="modal-signup">
+        testuing 
       </div>
       <br><br>
 
@@ -41,11 +45,11 @@
 
   <div class="container">
     <div class="section front-end-quiz">
-      <form action="#" id="front-end">
+      <form action="#" id="front-end" class="quiz-form">
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 l12">
-          <p> Which list contain the  correct  JavaScript Data type: </p>
+          <p class="questions-label"> Which list contain the  correct  JavaScript Data type: <span class="status-mark"></span></p>
           <label>
             <input name="q1" type="radio" value="A"  />
             <span>Undefined, Boolean, Nan, NUmber, String, Array, Objects</span>
@@ -55,28 +59,111 @@
         <div class="col s12 l12">
          
           <label>
-            <input name="q1" type="radio" value="A"  />
-            <span>Red</span>
+            <input name="q1" type="radio" value="B"  />
+            <span>Sets,Array,Undefine,Boolean, String, Number</span>
           </label>
         </div>
 
         <div class="col s12 l12">
         
           <label>
-            <input name="q1" type="radio" value="A"  />
-            <span>Red</span>
+            <input name="q1" type="radio" value="C"  />
+            <span>Number,String,Boolean,Null, Undefine, Object,Symbol</span>
           </label>
         </div>
 
         <div class="col s12 l12">
         
           <label>
-            <input name="q1" type="radio" value="A"  />
-            <span>Red</span>
+            <input name="q1" type="radio" value="D"  />
+            <span>Number, String, Boolean,Nan,Undefine, Object, Symbol</span>
           </label>
         </div>
                
       </div>
+
+      <!-- question 2-->
+      <div class="row">
+        <div class="col s12 l12">
+          <p class="questions-label"> What would be the position of "n" in the word "Cendyn" using indexOf: <span class="status-mark"></span></p>
+          <label>
+            <input name="q2" type="radio" value="A"  />
+            <span>3</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+         
+          <label>
+            <input name="q2" type="radio" value="B"  />
+            <span>2</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+        
+          <label>
+            <input name="q2" type="radio" value="C"  />
+            <span>4</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+        
+          <label>
+            <input name="q2" type="radio" value="D"  />
+            <span>-3</span>
+          </label>
+        </div>
+               
+      </div>
+
+      <!--Questin 3-->
+      <!-- question 2-->
+      <div class="row">
+        <div class="col s12 l12">
+          <p class="questions-label"> Select the method that add new value to an array and return the new length of the array <span class="status-mark"></span></p>
+          <label>
+            <input name="q3" type="radio" value="A"  />
+            <span>Map</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+         
+          <label>
+            <input name="q3" type="radio" value="B"  />
+            <span>concat</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+        
+          <label>
+            <input name="q3" type="radio" value="C"  />
+            <span>indexOf</span>
+          </label>
+        </div>
+
+        <div class="col s12 l12">
+        
+          <label>
+            <input name="q3" type="radio" value="D"  />
+            <span>push</span>
+          </label>
+        </div>
+               
+      </div>
+
+      <input type="submit" value="Submit Answers"/>
+    </form>
+    </div>
+    <br><br>
+  </div>
+
+
+
+
     </form>
     </div>
     <br><br>
@@ -113,13 +200,14 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="orange-text text-lighten-3" href="#">Shaunett Daley</a>
       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
+  <script src="https://kit.fontawesome.com/ff32477cb2.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
