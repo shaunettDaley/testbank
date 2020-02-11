@@ -17,23 +17,30 @@ document.addEventListener('DOMContentLoaded',()=> {
 //checking answers
 let correctAnswers = ['C','B','D'];
 let form = document.querySelector('.quiz-form');
+let result= document.querySelector('.result');
 
 //listen when submit button click
 form.addEventListener('submit', e => {
   e.preventDefault();
   let score = 0;
   const userAnswers = [form.q1.value,form.q2.value,form.q3.value];
-  let satus = document.querySelector('.status.mark');
+  const quest = [form.q1,form.q2,form.q3];
+  let status = document.querySelectorAll('.status-mark');
   userAnswers.forEach((answer, index)=> {
+    console.log(index);
     if(answer === correctAnswers[index]){
-      score +=10;
-      //show the symbol
-     // status.textContent = `<i class="fas fa-check"></i>`;
+            score +=10;
+        
     }
-    //status.textContent = `<i class="fas fa-check"></i>`;
-   
-  });
     
-
+  });
+ 
+ 
+    
+result.querySelector('span').textContent = `${score}%`;
+result.classList.remove('hidenow');
   console.log(score);
+
+  scrollTo(0,0);
 })
+
