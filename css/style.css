@@ -16,3 +16,7 @@
 .hidenow{
   display:none;
 }
+
+.codeBlock{
+  font-weight:bold;
+}
